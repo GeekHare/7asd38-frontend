@@ -26,7 +26,7 @@ export default class Home extends Vue {
   products = [];
   created() {
     this.$store.state.loader = true;
-    axios.get(process.env.VUE_APP_API_URL.concat('/products/'))
+    axios.get(process.env.VUE_APP_API_URL.concat('/products'))
         .then(response => {
           this.$store.state.loader = false;
           this.products = response.data;

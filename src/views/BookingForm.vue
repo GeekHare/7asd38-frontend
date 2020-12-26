@@ -193,7 +193,7 @@ export default class BookingForm extends Vue {
       "product_id": this.$router.currentRoute.params.id,
     };
     this.$store.state.loader = true;
-    axios.post(process.env.VUE_APP_API_URL.concat('/orders/'), data)
+    axios.post(process.env.VUE_APP_API_URL.concat('/orders'), data)
         .then(() => {
           this.$store.state.loader = false;
           this.isOrderSubmitted = true;
