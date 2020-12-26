@@ -41,12 +41,9 @@ export default class Home extends Vue {
 <style scoped lang="scss">
 .wrapper {
   max-width: 1280px;
-  margin: auto;
+  margin: 50px auto auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
-  @media only screen and (max-width: 640px) {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  }
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 30px;
 }
 </style>
